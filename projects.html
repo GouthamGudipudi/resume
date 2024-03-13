@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: antiquewhite;
+    }
+
+    header {
+      background-color: #6F4E37;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .project-container {
+      padding: 20px;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .project h2 {
+      color: rgb(213, 129, 33);
+      margin-top: 0;
+    }
+
+    .project-content {
+      overflow: hidden;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .project-description {
+      flex: 1;
+    }
+
+    .project-screenshot img {
+      width: auto;
+      max-height: 200px;
+      border-radius: 10px;
+      cursor: pointer; /* Add cursor pointer */
+    }
+
+    footer {
+      background-color: #6F4E37;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    .caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Projects</h1>
+  </header>
+
+  <div class="project-container">
+    <div class="project">
+      <div class="project-content">
+        <div class="project-description">
+          <h2>Project 1: BATTERY CHARGER USING SCR</h2>
+          <p>The battery is charged with a small amount of AC voltage or DC voltage, so; if you want to charge your battery with AC source then should follow these steps, we need first to limit the large AC voltage, need to filter the AC voltage to remove the noise, regulate and get the constant voltage and then give the resulting voltage to the battery for charging. Once charging is completed the circuit should automatically turn off.</p>
+          <p>Application: It is a silicon-controlled rectifier-based battery charger used for charging 12v batteries, Application for bike battery.</p>
+        </div>
+        <div class="project-screenshot">
+          <img src="battery charger.png" alt="Project 1 Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <div class="project-description">
+          <h2>Project 2: HEALTH MONITORING SYSTEM</h2>
+          <p>In this project, we displayed the pulse rate values and temperature values on serial monitor as well as in the Bluetooth terminal in the android phone. A lot of patients die due to heart attacks and heart diseases every year. This project is helpful for sensing and recording heart rate in bpm and temperature in Fahrenheit.</p>
+          <p>Application: It is based on Bluetooth technology used for the measurement of temperature, Heart rate of a person, Application for Hospitals.</p>
+        </div>
+        <div class="project-screenshot">
+          <img src="health.png" alt="Project 2 Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional projects -->
+    <div class="project">
+      <div class="project-content">
+        <div class="project-description">
+          <h2>Project 3: IOT BASED WEATHER MONITORING SYSTEM USING NODE MCU</h2>
+          <p>This project involves creating a live weather station using NodeMCU ESP8266. It connects sensors like DHT11, BMP180, and FC37 to measure humidity, temperature, pressure, and rainfall. 
+            Data is uploaded to a web server, accessible via NodeMCU's IP address, enabling remote monitoring in various environments like remote areas or freezers.</p>
+          <p>Application: It is an IOT based project for monitoring weather conditions in environment, it is best application 
+            for farmers.</p>
+        </div>
+        <div class="project-screenshot">
+          <img src="mcu.png" alt="Project 3 Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <div class="project-description">
+          <h2>Project 4: GSM BASED MOTOR CONTROL</h2>
+          <p>This project aims to alleviate the challenges faced by Indian farmers, particularly the inconvenience of traveling 
+            long distances daily to irrigate their crops. By implementing GSM-based agriculture motor control, farmers can
+             remotely operate irrigation systems via a smartphone app. 
+            This technology saves time, money, and effort, providing a more efficient solution for irrigation management.</p>
+          <p>Application: It is an GSM based project for proper utilization of water for the crops, GSM send message to 
+            farmer to control the field water pump from the home,
+             it is also the best application for farmers.
+            </p>
+        </div>
+        <div class="project-screenshot">
+          <img src="gsm.png" alt="Project 4 Screenshot">
+        </div>
+      </div>
+    </div>
+
+   
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Name</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption" class="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal
+    var images = document.querySelectorAll('.project-screenshot img');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    images.forEach(function(img) {
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

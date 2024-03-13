@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+            min-height: 100vh;
+            background-color: antiquewhite;
+        }
+        #header {
+            background-color: #6F4E37;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        #main-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout */
+            gap: 20px; /* Gap between content */
+            padding: 20px;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Gap between content */
+            align-items: center;
+            justify-items: center;
+        }
+        #footer {
+            background-color:#6F4E37;;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Center content */
+        .center-content {
+            text-align: center;
+        }
+        .social-media-icon {
+            width: 50px; /* Adjust icon size */
+            height: 50px; /* Adjust icon size */
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff; /* Add background color for social media icons */
+            margin: 5px; /* Add some margin between icons */
+            text-decoration: none; /* Remove underline from links */
+            color: #6218c3; /* Set the color of the icons */
+        }
+        .social-media-icon:hover {
+            background-color: #2581f0; /* Change background color on hover */
+            color: #fff; /* Change icon color on hover */
+        }
+        .image {
+            border-radius: 20px; /* Creates a rounded rectangle image */
+            width: 100%; /* Set image width to fill its container */
+            max-width: 300px; /* Limit maximum width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .about-me {
+            margin-top: 5px; /* Add margin for spacing */
+        }
+        .resume-button {
+            background-color: #2581f0; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            padding: 10px 20px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Adjust font size */
+            cursor: pointer; /* Add cursor pointer */
+            transition: background-color 0.3s; /* Add transition effect */
+            line-height: 2.5;
+        }
+        .resume-button:hover {
+            background-color: #155dab; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1> </h1>
+</div>
+
+<div id="main-container">
+    <div class="main-content" id="content">
+        <div class="center-content">
+            <h2>ABOUT</h2>
+            <p class="about-me">I am Goutham Gudipudi, a graduate student at Northern Arizona University. I am passionate about technology and innovation. As a member of the IEEE VFSTR technical team, I am actively involved in various projects and initiatives. Feel free to reach out to me via email or phone for any inquiries or collaborations.</p>
+            <p>Looking for a promising & challenging career which will enable me to provide best of my Technical, analytical 
+                & professional skills. A career which can sharpen my current skills and Knowledge and where I can have a 
+                good scope for learning and implementing new technologies.</p>
+        </div>
+        <div class="center-content">
+            <div class="image-container">
+                <img class="image" src="goutham.png" alt="Your Photo">
+            </div>
+            <div class="center-content">
+                <a href="GOUTHAM GUDIPUDI.pdf" class="resume-button" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="social">
+        <a href="tel:+19282259719" class="social-media-icon"><i class="fas fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto:gudipudigouthamms@gmail.com" target="_blank" class="social-media-icon"><i class="far fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/gowtham.gudipudi.5?mibextid=ZbWKwL" target="_blank" class="social-media-icon"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://youtube.com/@GUDIPUDIGOUTHAM?si=KhT1lxAl7hhGzNjY" target="_blank" class="social-media-icon"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/goutham.gudipudi?igsh=MWtsbTllOHJ6d2t3dw==" target="_blank" class="social-media-icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/gudipudi-goutham-8b576a222/" target="_blank" class="social-media-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/GouthamGudipudi" target="_blank" class="social-media-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
+    </div>
+</div>
+
+</body>
+</html>

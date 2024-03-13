@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutham Gudipudi Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+            color: #333;
+        }
+
+        header {
+            background-color: #6F4E37;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: rgb(213, 129, 33);
+            margin-top: 0;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
+        /* Resume Styles */
+        .resume-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .resume-image {
+            border-radius: 20px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .resume-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Home Button Styles */
+        .home-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px; /* Adjusted to bottom left corner */
+            background-color: #f2da8c;
+            color: #0d0d0d;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .home-button:hover {
+            background-color: #543c2a; /* Darker color on hover */
+        }
+
+        /* Media Queries */
+        @media only screen and (min-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 20% 80%;
+            }
+
+            header {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow-y: auto;
+            }
+
+            .content {
+                margin-left: 10%;
+                width: 80%;
+            }
+
+            .home-button {
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            .container {
+                display: block;
+            }
+
+            header {
+                position: relative;
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .home-button {
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <br>     </br>
+                    <br>     </br>
+                    <br>     </br>
+                    <img src="goutham.png" alt="Resume" class="resume-image">
+                    <h2>Goutham Gudipudi</h2>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+                <br>     </br>
+                <!-- Added link to resume PDF -->
+                <a href="GOUTHAM GUDIPUDI.pdf" target="_blank" class="resume-button">Download Resume</a>
+            </nav>
+            <!-- Home Button -->
+            <a href="home.html" class="home-button" style="color: black;">🏠</a> <!-- Unicode home symbol with black color -->
+        </header>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>Graduate student at Northern Arizona University and Technical Team member at IEEE VFSTR (Vignan University).</p>
+                <p>Looking for a promising & challenging career to utilize my technical, analytical, and professional skills, with a good scope for learning and implementing new technologies.</p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <p><strong>Masters (C.S):</strong> Northern Arizona University, Flagstaff University, 2023-2025 (Pursuing) | CGPA: 3.75</p>
+                <p><strong>B.Tech (E.C.E):</strong> Vignan University Vadlamudi Deemed to be University, 2019-2023 | CGPA: 8.94</p>
+                <p><strong>Intermediate (M.P.C):</strong> Narayana Junior College Vijayawada Board of Intermediate, 2017-2019 | CGPA: 8.84</p>
+                <p><strong>S.S.C:</strong> Narayana English Medium School Tenali Board of Secondary Education, 2017 | CGPA: 9.3</p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <p><strong>Technical Team Member:</strong> IEEE Vignan Foundation For Science Technology and Research Vadlamudi Deemed to be University (Oct 2021-present)</p>
+                <p><strong>Internship (Web Development):</strong> Internpe, Jun 2023 - July 2023</p>
+                <p><strong>HR Internship (Social Service):</strong> Subash Sewa Trust, Dec 2024 – Feb 2025</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <p><strong>Programming:</strong> C-Language Basics, Python Basics</p>
+                <p><strong>Software:</strong> MULTISIM, MATLAB, COMSOL, Xilinx-Vivado, Virtuoso, ISE</p>
+                <p><strong>Hardware Board:</strong> ARDUINO, NODEMCU, RASPBERRY-PI, ARM</p>
+                <p><strong>Hardware Board:</strong> ARDUINO, NODEMCU, RASPBERRY-PI, ARM MIC</p>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <p><strong>Battery Charger Using SCR:</strong> Silicon-controlled rectifier-based battery charger for 12V batteries, application for bike batteries.</p>
+                <p><strong>Health Monitoring System:</strong> Bluetooth technology-based system for measuring temperature and heart rate, application for hospitals.</p>
+                <p><strong>IOT Based Weather Monitoring System Using NodeMCU:</strong> Internet of Things project for monitoring weather conditions, ideal for farmers.</p>
+                <p><strong>GSM Based Motor Control:</strong> GSM-based project for water pump control in fields, ideal for farmers.</p>
+                <p><strong>Comparative Analysis of FIR Filter Using Different Multipliers and Adders:</strong> Journal paper on FIR filter design published in June 2023.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
